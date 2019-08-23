@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <h1>
+        Welcome to <%= userName%>  <!-- = : assign to it-->
+    </h1>
+    
+    <ul> <!---unorder list-->
+        <% for (let i=0;i<ar.length;i++){ %>
+            
+        <li>  <!--list item-->
+            <%= ar[i].username %> | <%= ar[i].userage %>
+        </li>
+        <% }%>
+    </ul>
+    <form action="/data" method="POST">
+        User Name:
+        <input type="text" name="username" /> </br>
+        User Age:
+        <input type="number" name="userage" /> </br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
