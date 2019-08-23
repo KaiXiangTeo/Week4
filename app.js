@@ -16,6 +16,7 @@ app.get('/',function(req,res){
     //res.render("index_ejs.html",{userName:'TIM'})
 });
 
+
 //________________________________________________________________//
 //static
 // app.use(express.static(__dirname +"/public"));
